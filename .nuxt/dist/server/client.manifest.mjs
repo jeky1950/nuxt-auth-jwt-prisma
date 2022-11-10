@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/petal/Desktop/Work/nuxt-auth-jwt-prisma/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
