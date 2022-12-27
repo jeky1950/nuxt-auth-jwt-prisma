@@ -7,7 +7,8 @@
     "start": "nuxi preview"
   },
   "devDependencies": {
-    "@nuxt/ui": "^0.3.3"
+    "@nuxt/ui": "^0.3.3",
+    "nuxt": "^3.0.0-rc.14"
   },
   "dependencies": {
     "@prisma/client": "^4.6.0",
@@ -15,7 +16,6 @@
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",
     "jsonwebtoken": "^8.5.1",
-    "nuxt": "^3.0.0-rc.13",
     "prisma": "^4.6.0"
   }
 }
