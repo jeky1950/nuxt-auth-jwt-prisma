@@ -3,7 +3,7 @@ import { prisma } from "~~/db";
 import bcrypt from "bcrypt";
 
 export default defineEventHandler(async (event)=>{
-   const {name, surname, email, phone, password} = await useBody(event);
+   const {name, surname, email, phone, password} = await readBody(event);
 
    //Check if the user exists
    const user = await prisma.user.findUnique({

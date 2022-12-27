@@ -1,7 +1,7 @@
 import { checkJwtToken } from "~~/jwt";
 
 export default defineEventHandler(async (event)=>{
-    const { token } = await useBody(event);
+    const { token } = await readBody(event);
     
     const isValid = await checkJwtToken(token).then((data: any)=>{
         const cookie = getCookie(event, 'user') || "{}";
