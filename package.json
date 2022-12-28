@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "@nuxt/ui": "^0.3.3",
-    "nuxt": "^3.0.0-rc.14"
+    "nuxt": "^3.0.0-rc.14",
+    "prisma-erd-generator": "^1.2.4"
   },
   "dependencies": {
     "@prisma/client": "^4.6.0",
