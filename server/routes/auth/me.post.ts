@@ -1,4 +1,4 @@
-import { checkJwtToken } from "~~/jwt";
+import { checkJwtToken, createJwtToken } from "~~/jwt";
 
 export default defineEventHandler(async (event)=>{
     const { token } = await readBody(event);
@@ -13,6 +13,13 @@ export default defineEventHandler(async (event)=>{
              
         return res;
     });
+
+    if(isValid.success){
+        //Refresh JWT token
+        const token = await createJwtToken();
+
+        setCookie(event, "token", token);
+    }
     
     return isValid;
 });

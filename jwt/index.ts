@@ -10,7 +10,7 @@ if(env.error){
 const { JWT_TOKEN_SECRET } = env.parsed;
 
 export const createJwtToken = async ()=>{
-    return jwt.sign({success: true}, JWT_TOKEN_SECRET, {expiresIn: "30d"});
+    return jwt.sign({success: true}, JWT_TOKEN_SECRET, {expiresIn: "5m"});
 }
 
 export const checkJwtToken = async (token: string)=>{
