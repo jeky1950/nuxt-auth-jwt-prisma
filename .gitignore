@@ -4,4 +4,5 @@ node_modules
 prisma/migrations
 prisma/dev.*
 .nuxt
+.output
 prisma/*.svg
