@@ -6,10 +6,10 @@
             <h4>{{ login_message }}</h4>
             <form @submit.prevent="login">
                 <div class="form-group">
-                    <input id="email" style="width: 100%; text-align: center;" type="email" v-model="email" placeholder="Email" required />
+                    <input id="email" style="width: 100%; text-align: center;" type="email" autocomplete="username" v-model="email" placeholder="Email" required />
                 </div>
                 <div class="form-group">
-                    <input id="password" style="width: 100%; text-align: center;" type="password" v-model="password" placeholder="Password" required />
+                    <input id="password" style="width: 100%; text-align: center;" type="password" autocomplete="current-password" v-model="password" placeholder="Password" required />
                 </div>
                 <div class="justify-content-center mt-3">
                     <button :class="{'btn-grey': !email || !password}" v-bind="{'disabled': !email || !password}" type="submit">{{ login_button_label }}</button>
